@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SMM Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SMM Panel</h1>
+      <p>Order followers, likes, views via QRIS</p>
+    </header>
+
+    <section class="card">
+      <h2>Buat Order</h2>
+      <label>Layanan</label>
+      <select id="services"></select>
+
+      <label>Link Target</label>
+      <input id="link" placeholder="https://instagram.com/username" />
+
+      <label>Jumlah</label>
+      <input id="qty" type="number" placeholder="1000" />
+
+      <button id="payBtn">Bayar QRIS</button>
+      <p id="price"></p>
+    </section>
+
+    <section class="card">
+      <h2>Pembayaran</h2>
+      <img id="qr" />
+      <pre id="payRes"></pre>
+      <button id="checkBtn">Saya sudah bayar</button>
+      <p id="status"></p>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
